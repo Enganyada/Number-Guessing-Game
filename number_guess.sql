@@ -50,8 +50,7 @@ SET default_table_access_method = heap;
 CREATE TABLE public.users (
     user_id integer NOT NULL,
     username character varying(22),
-    games_played integer,
-    best_game integer
+    number_of_guesses integer
 );
 
 
@@ -90,13 +89,40 @@ ALTER TABLE ONLY public.users ALTER COLUMN user_id SET DEFAULT nextval('public.u
 -- Data for Name: users; Type: TABLE DATA; Schema: public; Owner: freecodecamp
 --
 
+INSERT INTO public.users VALUES (1, 'AJ', NULL);
+INSERT INTO public.users VALUES (2, 'user_1674687138656', NULL);
+INSERT INTO public.users VALUES (3, 'user_1674687138655', NULL);
+INSERT INTO public.users VALUES (4, 'user_1674687482138', NULL);
+INSERT INTO public.users VALUES (5, 'user_1674687482137', NULL);
+INSERT INTO public.users VALUES (6, 'user_1674687996219', NULL);
+INSERT INTO public.users VALUES (7, 'user_1674687996218', NULL);
+INSERT INTO public.users VALUES (8, 'user_1674688131313', NULL);
+INSERT INTO public.users VALUES (9, 'user_1674688131312', NULL);
+INSERT INTO public.users VALUES (10, 'user_1674688351281', NULL);
+INSERT INTO public.users VALUES (11, 'user_1674688351280', NULL);
+INSERT INTO public.users VALUES (12, 'AK', NULL);
+INSERT INTO public.users VALUES (13, 'AJ', 6);
+INSERT INTO public.users VALUES (14, 'user_1674694668413', 597);
+INSERT INTO public.users VALUES (15, 'user_1674694668413', 809);
+INSERT INTO public.users VALUES (16, 'user_1674694668412', 334);
+INSERT INTO public.users VALUES (17, 'user_1674694668412', 595);
+INSERT INTO public.users VALUES (18, 'user_1674694668413', 287);
+INSERT INTO public.users VALUES (19, 'user_1674694668413', 880);
+INSERT INTO public.users VALUES (20, 'user_1674694668413', 613);
+INSERT INTO public.users VALUES (21, 'user_1674694948620', 742);
+INSERT INTO public.users VALUES (22, 'user_1674694948620', 213);
+INSERT INTO public.users VALUES (23, 'user_1674694948619', 457);
+INSERT INTO public.users VALUES (24, 'user_1674694948619', 768);
+INSERT INTO public.users VALUES (25, 'user_1674694948620', 860);
+INSERT INTO public.users VALUES (26, 'user_1674694948620', 118);
+INSERT INTO public.users VALUES (27, 'user_1674694948620', 314);
 
 
 --
 -- Name: users_user_id_seq; Type: SEQUENCE SET; Schema: public; Owner: freecodecamp
 --
 
-SELECT pg_catalog.setval('public.users_user_id_seq', 1, false);
+SELECT pg_catalog.setval('public.users_user_id_seq', 27, true);
 
 
 --
